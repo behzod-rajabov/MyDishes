@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orqa"
+    android:orientation="horizontal"
+    tools:context=".AddDishesFragment">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Taom Qo'shish"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/add_dishes_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/polya"
+                android:hint="Ovqat nomi"
+                android:inputType="textPersonName"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/add_dishes_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/polya"
+                android:gravity="top"
+                android:hint="Ovqat tafsiloti"
+                android:inputType="textMultiLine"
+                android:minHeight="100dp"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/add_dishes_image2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/polya"
+                android:hint="Rasm"
+                android:inputType="textPersonName"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="11sp"
+                android:textColor="@color/orqa"
+                android:text="Rasmni internetdagi manzilini kiriting yoki bo`sh qoldiring." />
+
+            <FrameLayout
+                android:layout_margin="8dp"
+                android:padding="4dp"
+                android:background="@drawable/polya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/add_dishes_categoryId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Kategoriya"
+                    android:inputType="number"
+                    android:padding="4dp"
+                    android:popupBackground="@color/colorAccent"
+                    android:spinnerMode="dialog" />
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/add_dishes_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/button"
+                android:padding="8dp"
+                android:text="Ovqat qo`shish"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

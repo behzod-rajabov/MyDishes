@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orqa"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddCategoryFragment">
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="16dp"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:text="Kategorya qo'shish "
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/add_category_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:background="@drawable/polya"
+                android:hint="Nomi"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/add_category_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:background="@drawable/polya"
+                android:hint="Rasm"
+                android:inputType="textPersonName" />
+
+
+            <Button
+                android:id="@+id/add_category_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/button"
+                android:text="Qo`shish" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

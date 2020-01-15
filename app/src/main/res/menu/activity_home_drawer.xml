@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group>
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@android:drawable/ic_dialog_dialer"
+            android:title="Bosh sahifa" />
+        <item
+            android:id="@+id/nav_all_categories"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="Kategoriyalar" />
+        <item
+            android:id="@+id/nav_categories"
+            android:icon="@android:drawable/ic_input_add"
+            android:title="Yangi kategoriya qo`shish" />
+        <item
+            android:id="@+id/nav_readCategory_dishes"
+            android:icon="@drawable/logo"
+            android:title="Ovqatlar" />
+        <item
+            android:id="@+id/nav_add_dishes"
+            android:icon="@android:drawable/ic_input_add"
+            android:title="Yangi ovqat qo`shish" />
+
+        <item
+            android:id="@+id/nav_favs"
+            android:icon="@drawable/fav"
+            android:title="Sevimlilar ro`yhati" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="Dastur haqida" />
+    </group>
+</menu>
